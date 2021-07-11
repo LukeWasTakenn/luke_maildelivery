@@ -4,7 +4,7 @@ This resource is a complete remake/rewrite of my first ever resource released on
 
 The main issue with my first reasource was performance and unneccesary while true loops that were constantly running, resulting the resource to use 0.15 ms while idle.
 
-The rewrite solves that by using PolyZone, bringing the idle usage down to 0.1 ms.
+The rewrite solves that by using PolyZone, bringing the idle usage down to 0.01 ms.
 
 NativeUI was also ditched due to performance reasons, instead using nh-context menu.
 
