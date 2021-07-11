@@ -247,7 +247,7 @@ AddEventHandler('luke_maildelivery:VehicleMenu', function()
             txt = ''
         }
     })
-    for k, v in pairs(Config.Vehicles) do
+    for k, v in ipairs(Config.Vehicles) do
         TriggerEvent('nh-context:sendMenu', {
             {
                 id = k,

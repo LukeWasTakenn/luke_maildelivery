@@ -7,7 +7,7 @@ if Config.EnableVersionCheck == true then
         local response = tostring(response)
         for line in response:gmatch("([^\n]*)\n?") do
             if line:find('^version ') then
-                repoVersion = line:sub(10, (line:len(line) - 1))
+                repoVersion = line:sub(10, (line:len(line) - 2))
                 break 
             end
         end

@@ -56,8 +56,8 @@ Config.Deliveries = {
 }
 
 Config.Vehicles = {
-    Boxville = {name = 'boxville2', label = 'Boxville Delivery Van', desc = 'Common post delivery van', pay = 300, delivery = Config.Deliveries.City},
-    Speedo = {name = 'speedo', label = 'Speedo Van', desc = 'Faster van, does deliveries outside the city',  pay = 500, delivery = Config.Deliveries.State},
+    {name = 'boxville2', label = 'Boxville Delivery Van', desc = 'Common post delivery van', pay = 300, delivery = Config.Deliveries.City}, -- Boxville
+    {name = 'speedo', label = 'Speedo Van', desc = 'Faster van, does deliveries outside the city',  pay = 500, delivery = Config.Deliveries.State}, -- Speedo
 }
 
 Config.EnableWorkClothes = true

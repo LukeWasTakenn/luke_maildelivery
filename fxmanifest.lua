@@ -3,7 +3,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'Luke - https://www.github.com/lukewastakenn'
-version '1.0.0'
+version '1.0.1'
 
 client_scripts {
     '@PolyZone/client.lua',
