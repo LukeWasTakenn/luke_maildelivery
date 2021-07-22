@@ -121,9 +121,9 @@ Citizen.CreateThread(function()
     lockerZone:onPlayerInOut(function(isPointInside, point)
         insideLocker = isPointInside
         if insideLocker and hasJob then
-            TriggerEvent('cd_drawtextui:ShowUI', 'show', strings.lockerAction)
+            TriggerEvent('luke_textui:ShowUI', strings.lockerAction, blue)
         else
-            TriggerEvent('cd_drawtextui:HideUI')
+            TriggerEvent('luke_textui:HideUI')
         end
     end)
 
@@ -132,12 +132,12 @@ Citizen.CreateThread(function()
         if insideSpawn then
             inVeh = IsPedInAnyVehicle(playerPed, false)
             if not inVeh and isOnDuty then
-                TriggerEvent('cd_drawtextui:ShowUI', 'show', strings.vehSpawnAction)
+                TriggerEvent('luke_textui:ShowUI', strings.vehSpawnAction, blue)
             else
-                TriggerEvent('cd_drawtextui:ShowUI', 'show', strings.vehSpawnReturn)
+                TriggerEvent('luke_textui:ShowUI', strings.vehSpawnReturn, blue)
             end
         else
-            TriggerEvent('cd_drawtextui:HideUI')
+            TriggerEvent('luke_textui:HideUI')
         end
     end)
 end)
@@ -220,9 +220,9 @@ AddEventHandler('luke_maildelivery:VehicleHandle', function(vehicle)
 
         TaskWarpPedIntoVehicle(playerPed, workVehicle, -1)
 
-        TriggerEvent('cd_drawtextui:HideUI')
+        TriggerEvent('luke_textui:HideUI')
 
-        TriggerEvent('cd_drawtextui:ShowUI', 'show', strings.vehSpawnReturn)
+        TriggerEvent('luke_textui:ShowUI', strings.vehSpawnReturn, blue)
 
         RemoveBlip(garageBlip)
         ReturnBlip()
@@ -318,9 +318,9 @@ function StartDelivery(deliveries)
     deliveryZone:onPlayerInOut(function(isPointInside, point)
         insideDelivery = isPointInside
         if insideDelivery then
-            TriggerEvent('cd_drawtextui:ShowUI', 'show', strings.doorAction)
+            TriggerEvent('luke_textui:ShowUI', strings.doorAction, blue)
         else
-            TriggerEvent('cd_drawtextui:HideUI')
+            TriggerEvent('luke_textui:HideUI')
         end
     end)
 
@@ -344,9 +344,9 @@ function StartDelivery(deliveries)
                 vehicleBack:onPlayerInOut(function(isPointInside, point)
                     insideTrunk = isPointInside
                     if insideTrunk then
-                        TriggerEvent('cd_drawtextui:ShowUI', 'show', strings.trunkAction)
+                        TriggerEvent('luke_textui:ShowUI',  strings.trunkAction, blue)
                     else
-                        TriggerEvent('cd_drawtextui:HideUI')
+                        TriggerEvent('luke_textui:HideUI')
                     end
                 end)
 
@@ -465,7 +465,7 @@ function DeleteWorkVehicle()
 
     workVehicle = nil
 
-    TriggerEvent('cd_drawtextui:HideUI')
+    TriggerEvent('luke_textui:HideUI')
 
     RemoveBlip(returnBlip)
     GarageBlip()
