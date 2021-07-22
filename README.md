@@ -15,7 +15,7 @@ In the future I plan to convert the resource to use bt-target, but it's good eno
 ## Dependencies
 * [PolyZone](https://github.com/mkafrin/PolyZone)
 * [nh-context](https://github.com/nerohiro/nh-context)
-* [cd_drawtextui](https://github.com/dsheedes/cd_drawtextui)
+* [luke_textui](https://github.com/LukeWasTakenn/luke_textui)
 
 ## Download & Install
 * Download the latest version from the Releases page.
